@@ -32,19 +32,6 @@ Engineers who already use MySQL day-to-day and want to move from intuition to a 
 
 ---
 
-## How Each Lab Is Structured
-
-Every session README follows the same format:
-
-- **Learning objectives** — what you will be able to do by the end
-- **Setup** — any schema or data required
-- **Exercises** — step-by-step with expected output and explanations
-- **Questions** — prompts to check your understanding
-- **Takeaways** — the one or two things worth remembering from each exercise
-- **Quick reference** — commands and patterns to keep
-
----
-
 ## Running the Labs
 
 Clone the repo and open the session README in your editor or GitHub, then run the SQL in your MySQL client alongside it.
