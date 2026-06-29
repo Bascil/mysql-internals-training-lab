@@ -55,6 +55,15 @@ WITH RECURSIVE seq(n) AS (
 )
 SELECT n FROM seq;
 
+CREATE TABLE IF NOT EXISTS customers (
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(100),
+    email VARCHAR(150),
+    country VARCHAR(50),
+    status ENUM('ACTIVE','INACTIVE','SUSPENDED','PENDING','DELETED'),
+    created_at DATE
+);
+
 INSERT INTO customers (
     customer_name, email, country, status, created_at
 )
