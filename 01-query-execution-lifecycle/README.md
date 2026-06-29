@@ -45,6 +45,16 @@ The database and tables are already created. Run this final step to populate 1 m
 ```sql
 USE mysql_lab;
 
+CREATE TABLE IF NOT EXISTS numbers (n INT PRIMARY KEY);
+
+INSERT INTO numbers (n)
+WITH RECURSIVE seq(n) AS (
+  SELECT 0
+  UNION ALL
+  SELECT n + 1 FROM seq WHERE n < 999
+)
+SELECT n FROM seq;
+
 INSERT INTO customers (
     customer_name, email, country, status, created_at
 )
